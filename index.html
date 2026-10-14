@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beräkna ett orderkvitto</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="receipt" aria-labelledby="receipt-title">
+      <p class="eyebrow">Ljus & Form</p>
+      <h1 id="receipt-title">Orderkvitto</h1>
+
+      <dl class="receipt__rows">
+        <div>
+          <dt>Produkt</dt>
+          <dd id="product"></dd>
+        </div>
+        <div>
+          <dt>Antal</dt>
+          <dd id="quantity"></dd>
+        </div>
+        <div>
+          <dt>Styckpris</dt>
+          <dd id="unit-price"></dd>
+        </div>
+        <div>
+          <dt>Delsumma</dt>
+          <dd id="subtotal"></dd>
+        </div>
+        <div>
+          <dt>Frakt</dt>
+          <dd id="shipping"></dd>
+        </div>
+        <div class="receipt__total">
+          <dt>Totalt</dt>
+          <dd id="total"></dd>
+        </div>
+      </dl>
+
+      <div class="receipt__summary" aria-label="Orderkontroll">
+        <p id="order-size">Stor order:</p>
+        <p id="order-status">Status:</p>
+      </div>
+    </main>
+  </body>
+</html>
